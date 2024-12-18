@@ -4,3 +4,140 @@
     box-sizing: border-box;
     font-family: "Inter Tight", sans-serif;
 }
+
+
+
+    /* Desktop: 1280 pikselden itibaren */
+
+    /*-----------------------------------------------------VEGETABLES BÖLÜMÜ--------------------------------------------------------------------------*/
+    .vegetables {
+        background-color: #7A3145;
+        
+    }
+    .vegatables-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vegetables-title {
+        max-width: 626px;
+        padding-bottom: 52px;
+    }
+    .vegetables-title-line-one {
+        max-width: 508px;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.015em;
+        color: #FBFBFB;
+        padding-bottom: 24px;
+    }
+    .vegetables-title-line-two {
+        color: #D4BFC4;
+    }
+    .vegetables-title-text {
+        color: #FBFBFB;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .vegetables-img {
+        max-width: 100%;
+        
+        
+    }
+    .vegetables-img-ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        row-gap: 28px;
+        justify-content: space-between;
+
+
+    }
+    .vegetables-img-box {
+        max-width: 344px;
+        background-color: #FBFBFB;
+        border-radius: 40px;
+        padding: 32px;
+    }
+    .vegetables-img-li-title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -0.15;
+        color: #7A3145;
+        padding-bottom: 12px;
+    }
+    .vegetables-img-li-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #141414;
+    }
+    /*-----------------------------------------------------VEGETABLES BÖLÜMÜ--------------------------------------------------------------------------*/
+  
+  
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    /* Tablet: 768 pikselden itibaren */
+
+    /*-----------------------------------------------------VEGETABLES BÖLÜMÜ--------------------------------------------------------------------------*/
+    .vegatables-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    /*-----------------------------------------------------VEGETABLES BÖLÜMÜ--------------------------------------------------------------------------*/
+
+  }
+  
+  
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    /* Mobile: 375 pikselden itibaren */
+
+    /*-----------------------------------------------------VEGETABLES BÖLÜMÜ--------------------------------------------------------------------------*/
+    .vegatables-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .vegetables-img-li {
+        display: flex;
+    } 
+    .vegetables-img-ul {
+        display: flex;
+        justify-content: center;
+    }
+    /*-----------------------------------------------------VEGETABLES BÖLÜMÜ--------------------------------------------------------------------------*/
+  }
+  
+  
+  @media screen and (max-width: 375px) {
+    /* Mobile: 320 pikselden itibaren esnek düzen */
+    
+    /*-----------------------------------------------------VEGETABLES BÖLÜMÜ--------------------------------------------------------------------------*/
+    .vegetables-title-line-one {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 48px;
+    }
+    .vegatables-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .vegetables-img-box {
+        max-width: 335px;
+        background-color: #FBFBFB;
+        border-radius: 40px;
+        padding: 32px;
+    }
+    /*-----------------------------------------------------VEGETABLES BÖLÜMÜ--------------------------------------------------------------------------*/
+
+  }
+  
