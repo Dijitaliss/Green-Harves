@@ -54,6 +54,10 @@
     list-style-type: none;
 }
 
+.adress-list>li>a {
+    text-decoration: none;
+}
+
 .phone-address a {
     color: white;
 }
