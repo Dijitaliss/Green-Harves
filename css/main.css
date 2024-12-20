@@ -46,6 +46,7 @@
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
   color: white;
+
 }
 
 
@@ -61,7 +62,7 @@
 
 
 
-/* For Desktopp */
+/* For Desktop */
 @media (min-width: 1024px) {
 .advertisement-container {
   width: 100%;
