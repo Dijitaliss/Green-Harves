@@ -169,15 +169,29 @@
 .works {
     display: flex;
     flex-direction: row;
+    /* Yan yana hizalama */
     align-items: center;
-    vertical-align: center;
     justify-content: space-between;
+    /* Boşluk ayarı */
+    padding: 30px;
+    gap: 30px;
 }
+
+how-it-works {
+    display: flex;
+    flex-direction: row;
+    /* Yan yana hizalama */
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+
 
 .works {
     display: flex;
     /* Flexbox düzeni ile yatay hizalama */
-    flex-direction: column;
+    /*flex-direction: column; */
     /* Mobil cihazlarda dikey hizalama için */
     align-items: center;
     /* İçeriği yatay olarak ortalar */
@@ -189,12 +203,12 @@
     /* İki öğe arasındaki boşluk */
 }
 
-.works {
+ /*.works {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 .athletic-woman {
     display: flex;
@@ -454,7 +468,7 @@ img.responsive-image {
     }
 
     
-    .works {
+    /*---.works {
             
             flex-direction: column;
             /* Tablet ekranlarda öğeler yan yana */
@@ -462,7 +476,7 @@ img.responsive-image {
             /* Tablet için öğeler arasındaki boşluk */
             padding: 50px;
             /* Daha küçük padding */
-        } 
+        } ---*/
 
 
     
