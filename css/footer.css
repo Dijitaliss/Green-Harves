@@ -182,22 +182,4 @@
 
 
 
-@media screen and (min-width: 1280px) {
-    /* Desktop: 1280 pikselden itibaren */
-  }
-  
-  
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    /* Tablet: 768 pikselden itibaren */
-  }
-  
-  
-  @media screen and (min-width: 375px) and (max-width: 767px) {
-    /* Mobile: 375 pikselden itibaren */
-  }
-  
-  
-  @media screen and (max-width: 374px) {
-    /* Mobile: 320 pikselden itibaren esnek düzen */  
-  }
 
