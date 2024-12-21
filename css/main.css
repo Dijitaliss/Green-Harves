@@ -14,6 +14,23 @@
     align-items: center;
 }
 
+
+
+
+/* Tablet cihazlar için */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .athletic-woman img {
+      content: url("images/woman-tablet.jpg");
+  }
+}
+
+/* Mobil cihazlar için */
+@media screen and (max-width: 767px) {
+  .athletic-woman img {
+      content: url("images/woman-mobile.jpg");
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
   /* Mobile: 375 pikselden itibaren */
 
@@ -50,6 +67,7 @@
           gap: 10px;
           /* Daha küçük ekranlarda daha küçük boşluk */
           margin-bottom: 15px;
+          max-width: 100%;
           /* Daha az dikey boşluk */
       }
 
@@ -69,8 +87,7 @@
     /* Mor arka plan */
     flex: 1;
     /* Alanı eşit paylaştır */
-    padding: 50px;
-    /* İçerik için boşluk */
+  
 }
 
 .text-section {
@@ -78,7 +95,7 @@
     /* Yeşil arka plan */
     flex: 1;
     /* Alanı eşit paylaştır */
-    padding: 50px;
+   
 }
 
 .how-it-works {
@@ -93,9 +110,9 @@
    width: auto;
 }
 .container-ItWorks2 {
-        max-width: 1280px;
+       
         width: 100%;
-        margin: 0 auto;
+        
         padding: 100px;
         align-items: center;
         
@@ -117,7 +134,7 @@
 .works {
    display: flex;
    /* İki öğeyi yan yana yerleştirir */
-   gap: 30px;
+ 
    /* İki öğe arasına 20px boşluk ekler */
 }
 
@@ -138,8 +155,8 @@
    align-items: center;
    justify-content: space-between;
    /* Boşluk ayarı */
-   padding: 30px;
-   gap: 30px;
+   gap: 300px;
+ 
 }
 
 .how-it-works {
@@ -149,7 +166,7 @@
    align-items: center;
    justify-content: space-between;
    height: auto;
-   width: 100%;
+   
 }
 
 
@@ -162,9 +179,9 @@
    /* İçeriği yatay olarak ortalar */
    justify-content: center;
    /* İçeriği dikey olarak ortalar */
-   padding: 30px;
+   
    /* Kapsayıcıya her taraftan 100px boşluk ekler */
-   gap: 50px;
+   
    /* İki öğe arasındaki boşluk */
 }
 
@@ -174,7 +191,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   padding-bottom: 40px;
+   
 }
 
 img.responsive-image {
@@ -337,7 +354,7 @@ img.responsive-image {
   
       .athletic-woman {
           flex: 1;
-          padding: 20px;
+          
           background-color: transparent;
           /* Varsayılan arka planı temizle */
       }
@@ -352,13 +369,18 @@ img.responsive-image {
 
   
 
-
+  .steps {
+    
+  }
   
   .athletic-woman,
   .text-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
           flex: unset;
           /* Eşit alan paylaştırmayı kaldır */
-          width: 100%;
+      
           /* Tam genişlik */
           padding: 20px;
           /* İçeriği biraz daralt */
@@ -371,6 +393,7 @@ img.responsive-image {
   .steps p {
   font-size: 14px; /* Küçük ekranlar için daha küçük boyut */
   line-height: 1.4; /* Satır yüksekliği de küçültülür */
+  
 }    
 
 
@@ -431,6 +454,7 @@ img.responsive-image {
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
   color: white;
+  
 
 }
 
@@ -444,6 +468,7 @@ img.responsive-image {
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
 }
+
 
 
 
@@ -464,6 +489,7 @@ img.responsive-image {
   text-align: left;
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
+  max-width: 861.98px;
 }
 
 .advertisement-text-box {
@@ -511,6 +537,7 @@ img.responsive-image {
 }
 
 
+
 }
 
   
@@ -525,6 +552,7 @@ img.responsive-image {
         width: 100%;
         height: 492px;
         padding-top: 100px;
+        padding-right: 32px;
         padding-left: 32px !important;
         padding-right: 32px;
     }
@@ -552,21 +580,27 @@ img.responsive-image {
     .reviews-img {
       max-width: 704px;
       display: flex;
-      overflow-x: scroll;
+      
     }
     .reviews-img-ul-li {
       width: 340px;
-      
+    }
+    .reviews-title-text {
+      padding-bottom: 30px;
     }
     .reviews-img-ul{
         padding-top: 52px;
         width: 335px;
         display: flex;
         overflow-x: scroll;
+        gap: 24px;
+        
     }
     .reviews-img-box{
         padding-left:16px ;
         padding-top: 20px;
+        width: 335px;
+        height: 228px;
     }
     .reviews-img-box-text{
         font-size: 14px;
@@ -583,6 +617,7 @@ img.responsive-image {
     height: 692px;
     padding-top: 100px;
     padding-left: 100px;
+    padding-right: 100px;
 }
 
 .reviews-title{
@@ -617,8 +652,8 @@ img.responsive-image {
    list-style-type: none;
    display: flex;
    flex-direction: row;
-   gap: 24px;
-   width: 1080px;
+   justify-content: space-between;
+   width: 100%;
    
 }
 
@@ -994,7 +1029,7 @@ img.responsive-image {
   }
   
   @media screen and (min-width: 768px) {
-    .container {
+    .your-order-container {
       padding: 100px 72px;
     }
   
@@ -1033,7 +1068,7 @@ img.responsive-image {
       margin-top: 52px;
       display: flex;
       flex-direction: row;
-      gap: 50px;
+      justify-content: space-between;
     }
   
     .form-div {
