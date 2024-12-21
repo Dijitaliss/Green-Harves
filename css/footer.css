@@ -3,20 +3,19 @@
 }
 
 
-.footer {
-    min-width: 1280px;
-}
+
 .footer-top {
     display: flex;
     flex-direction: row;
     padding: 52px 100px 52px 100px;
+    justify-content: space-between;
 
 }
 .footer {
     background-color: #7A3145;
 }
 
-.logo {
+.logofoot {
     margin-right: 250px;
 }
 .logo-title {
@@ -35,7 +34,7 @@
     gap: 121px;
 }
 
-.footer-two-container {
+.footer-two-title {
     width: 228px;
     height: 144px;
     color: white;
@@ -67,6 +66,7 @@
 }
 
 .footer-bottom {
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     gap: 686px;
@@ -116,7 +116,7 @@
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
-    .footer {}
+    
 
     .footer-top {
         display: flex;
@@ -147,7 +147,7 @@
         flex-direction: column;
     }
 
-    .footer-two-container h3 {
+    .footer-two-title h3 {
         display: flex;
         gap: 14px;
         font-weight: 600;
