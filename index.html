@@ -10,21 +10,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./images/green-harvest_11053840.png" type="image/x-icon">
 
     
 <body>
     <header>
         <!--muhammet-->
         <!--Menü kısmı burada nav etiketi içine yapılıcak.-->
-        <nav></nav>
+        <div class="navbar">
+          <div class="logo">
+            <a href="#">
+            <svg class="logo-svg">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            </a>
+          </div>
+          <div class="link">
+            <nav>
+              <ul>
+                <li><a href="#howItWorks">How It Works</a></li>
+                <li><a href="#vegetables">Vegetables</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><button type="button" class="shop" >SHOP NOW</button></li>
+              </ul>
+            </nav>
+          </div>  
+  
+          <div class="lines">
+            <svg class="outline">
+              <use href="./images/icons.svg#icon-heroicons-outline_menu-alt-1"></use>
+            </svg>
+          </div>
+        </div>
+  
+        <div class="bcs">
+          <div class="backgroundLeft">
+            <div class="text">
+              <h1>organic vegetables to your diet today!</h1>
+              <p>
+                Our expertly curated vegetable baskets are made with the freshest,
+                highest quality vegetables available. Fresh Harvest Box has got
+                you covered. Fresh, high-quality vegetables in expertly curated
+                vegetable baskets delivered to you.
+              </p>
+            </div>
+          </div>
+          <div class="backgroundRight"></div>
+        </div>
     </header>
 
     <main>
 
-        <section class="hero">
-            <!--muhammet-->
-            <!--Hero kısmı na ana başlık yani "organic vegetables to your diet today!" denien kısım yapılcak.-->
-        </section>
+      
 
         <section class="how-ıt-works">
             <!--alican-->
@@ -38,9 +75,12 @@
                     </p>
                     <div class="works">
                         <div class="athletic-woman">
-                            <img src="images/woman-desktop.jpg" alt="ATHLETIC WOMAN" class="responsive-image">
-                            <img class="responsive-image1" style="display: none;" src="./images/woman-tablet.jpg" alt="">
-                            <img class="woman-mobile" style="display: none;" src="./images/woman-mobile.jpg" alt="">
+                          <picture>
+                            <source srcset="images/woman-mobile.jpg" media="(max-width: 767px)">
+                             <source srcset="images/woman-tablet.jpg" media="(min-width: 768px) and (max-width: 1279px)">
+                             <img src="images/woman-desktop.jpg" alt="ATHLETIC WOMAN" class="responsive-image">
+                              </picture>
+                            
                         </div>
                         <div class="text-section">
                             <h2>
@@ -92,8 +132,8 @@
                <span class="advertisement-text-box"> 
                 DISCOUNT UP TO 40%!
                </span> 
-               TASTE THE VITAMINS <br>
-               AND KEEP YOUR <br>
+               TASTE THE VITAMINS 
+               AND KEEP YOUR 
                HEALTH
             </p>
         </div>
@@ -197,7 +237,7 @@
         </section>
 
           <section class="your-order">
-            <div class="container">
+            <div class="your-order-container">
               <div class="order-title">
                 <h2 class="fresh">
                   Fresh
@@ -250,7 +290,7 @@
     <footer class="footer"> <!-- fufu -->
 
             <div class="footer-top">
-              <div class="logo">
+              <div class="logofoot">
 
                 </svg>
                 <svg width="20" height="20">
@@ -283,7 +323,7 @@
               </div>
     
               <div class="footer-content">
-                <div class="footer-two-container">
+                <div class="footer-two-title">
                   <h3>HOW IT WORKS</h3>
                   <br />
                   <h3>VEGETABLES</h3>
