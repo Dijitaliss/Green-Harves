@@ -1,203 +1,176 @@
-.container  {
+
+
+.footer {
+    background-color: #7a3145;
+    color: #fbfbfb;
+  }
+  
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    vertical-align: baseline;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  .footer-logo-a {
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  
+  .footer-text {
     font-family: "Inter Tight", sans-serif;
-}
-
-
-.footer {
-    min-width: 1280px;
-}
-.footer-top {
-    display: flex;
-    flex-direction: row;
-    padding: 52px 100px 52px 100px;
-
-}
-.footer {
-    background-color: #7A3145;
-}
-
-.logo {
-    margin-right: 250px;
-}
-.logo-title {
-    width: 265px;
-    height: 60px;
-    color: white;
-    font-weight: 500;
     font-size: 16px;
+    font-weight: 500;
     line-height: 20px;
-    margin-top: 44px;
-}
-
-.footer-content {
+    text-align: left;
+  }
+  
+  .footer-nav-menu {
     display: flex;
-    flex-direction: row;
-    gap: 121px;
-}
-
-.footer-two-container {
-    width: 228px;
-    height: 144px;
-    color: white;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: -0.05em;
-}
-
-.phone-address {
-    width: 216px;
-    height: 84px;
-}
-
-.phone-address li {
+    flex-direction: column; /* Dikey dizilim */
+    gap: 40px;              /* Geniş ekranlar için boşluk */
+  }
+  
+  .footer-nav-list {
     list-style-type: none;
-}
-
-.adress-list>li>a {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .footer-nav-list-item {
+    font-family: inherit;
     text-decoration: none;
-}
-
-.phone-address a {
-    color: white;
-}
-
-.adress-list li:last-child {
-    margin-top: 24px;
-}
-
-.footer-bottom {
+    color: #fbfbfb;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
+  
+  .footer-address-list {
+    font-family: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .footer-address a {
+    text-decoration: none;
+    list-style-type: none;
+    font-style: normal;
+    color: #fbfbfb;
+  }
+  
+  .footer-ending {
+    min-width: 320px;
     display: flex;
     flex-direction: row;
-    gap: 686px;
-    padding: 124px 100px 52px 100px;
-    color: #D4BFC4;
-    width: auto;
-}
+    justify-content: space-between;
+    color: rgba(251, 251, 251, 0.5);
+    padding: 40px;
+    margin: 0 auto;
+  }
+  
+  .footer-ending a {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: inherit;
+    color: rgba(251, 251, 251, 0.5);
+    font-size: 16px;
+  }
+  
+  
 
-.logo-mobile {
-    display: none;
-}
 
+/* Responsive kurallar */
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 375px) {
+    .container-footer {
+      flex-direction: column; /* Yatay dizilim */
+      padding: 40px;          /* Orta boyutlu ekranlar için padding */
+      gap: 40px;
+    }
+  
+    .footer-nav-menu {
+      gap: 40px;              /* Elemanlar arasında boşluk */
+    }
+  
+    .footer-ending {
+      flex-direction: row;    /* Yatay dizilim */
+      align-items: center;    /* Ortaya hizalama */
+      justify-content: space-between;
+      padding: 40px;
+    }
+  
+    .footer-ending a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container-footer {
+      flex-direction: row;    /* Yatay dizilim */
+      padding: 72px;
+    }
+  
+    .footer-nav-menu {
+      gap: 100px;
+    }
+  
+    .footer-ending {
+      flex-direction: row;    /* Yatay dizilim */
+      justify-content: space-between;
+      padding: 72px;
+    }
+  
+    .footer-ending a {
+      font-size: 18px;
+    }
+  }
     
-    .footer {
-        padding: 32px;
+
+
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 100px;
+      align-items: center;
     }
-
-    .footer-top {
-        padding: 0;
-        display: flex;
+  
+    .container-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      vertical-align: baseline;
+      padding: 72px;
     }
-
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        width: 227px;
-        height: 292px;
+  
+    .footer-nav-menu {
+      flex-direction: row;    /* Yatay dizilim */
+      gap: 175px;
     }
-
-    .footer-bottom {
-        display: flex;
-        padding: 100px 32px 32px 32px ;
-        gap: 318px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        box-sizing: border-box;
+  
+    .footer-ending {
+      max-width: 1280px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 72px;
     }
-
-    .logo-mobile {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-
-    .footer {}
-
-    .footer-top {
-        display: flex;
-        flex-direction: column;
-        padding: 40px 20px 40px 20px ;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .logo-mobile {
-        display: block;
-
-    }
-
-    .logo-title:last-child {
-        text-align: start;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 14px;
-    }
-
-    .footer-content {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-two-container h3 {
-        display: flex;
-        gap: 14px;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: -0.015em;
-    }
-
-    .phone-address {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 20px;
-    }
-    
-    .footer-bottom {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-        padding: 0;
-        gap: 16px;
-        padding: 0px 20px 40px 20px ;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-
-    }
-
-
-
-}
-
-
-
-
-@media screen and (min-width: 1280px) {
-    /* Desktop: 1280 pikselden itibaren */
   }
-  
-  
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    /* Tablet: 768 pikselden itibaren */
-  }
-  
-  
-  @media screen and (min-width: 375px) and (max-width: 767px) {
-    /* Mobile: 375 pikselden itibaren */
-  }
-  
-  
-  @media screen and (max-width: 374px) {
-    /* Mobile: 320 pikselden itibaren esnek düzen */  
-  }
-
