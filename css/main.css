@@ -819,6 +819,16 @@ img.responsive-image {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .vegetables-title-line-one {
+      max-width: 508px;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 64px;
+      letter-spacing: -0.015em;
+      color: #FBFBFB;
+      padding-bottom: 24px;
+  }
+
     .vegetables-img-li {
         display: flex;
     } 
