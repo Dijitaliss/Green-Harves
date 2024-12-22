@@ -139,6 +139,11 @@
         display: block;
 
     }
+    .logostyle {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
 
     .logo-title:last-child {
         text-align: start;
