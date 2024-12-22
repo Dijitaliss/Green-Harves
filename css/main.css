@@ -878,6 +878,7 @@ img.responsive-image {
   .your-order {
     background-color: #576F35;
     color: #fbfbfb;
+    padding-top: 80;
   }
   
   .order-title {
@@ -1052,6 +1053,12 @@ img.responsive-image {
   }
   
   @media screen and (min-width: 375px) {
+    .your-order {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     .form-and-social {
       flex-direction: column;
       align-items: center;
@@ -1072,6 +1079,12 @@ img.responsive-image {
   }
   
   @media screen and (min-width: 768px) {
+    .your-order {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     .your-order-container {
       padding: 100px 72px;
     }
