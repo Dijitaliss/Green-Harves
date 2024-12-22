@@ -28,6 +28,7 @@
   picture {
     display: flex;
   }
+  
 }
 
 /* Mobil cihazlar için */
@@ -594,8 +595,8 @@ img.responsive-image {
       
       width: 100%;
       height: 664px;
-      padding-left: 10px !important;
-      padding-right: 10px !important;
+      padding-left: 10px ;
+      padding-right: 10px ;
       padding-top: 80px;
   }
   }
@@ -1015,8 +1016,8 @@ img.responsive-image {
   }
   
   .social-networks {
-    height: 532px;
-    padding: 50px;
+   
+    padding:73px 50px;
     background-color: #7A3145;
     border-radius: 30px;
     width: 100%;
