@@ -76,11 +76,11 @@
                     <div class="works">
                         <div class="athletic-woman">
                           <picture>
-                            <source srcset="images/woman-mobile.jpg" media="(max-width: 767px)">
+                          
                              <source srcset="images/woman-tablet.jpg" media="(min-width: 768px) and (max-width: 1279px)">
                              <img src="images/woman-desktop.jpg" alt="ATHLETIC WOMAN" class="responsive-image">
                               </picture>
-                            
+                            <img class="woman-mobile" src="./images/woman-mobile.jpg" alt="">
                         </div>
                         <div class="text-section">
                             <h2>
@@ -141,8 +141,8 @@
             <!--advertisemmen buraya reklam kısmı gelicek yani %40 yazan kısım.-->
         </section>
 
-        <section class="vegetables">
-            <div class="vegatables-container">
+        <section class="vegetables" id="vegetables">
+            <div class="vegatables-container" >
                 <div class="vegetables-title">
                     <h2 class="vegetables-title-line-one" title="Organic Vegatables">ORGANIC <span class="vegetables-title-line-two">VEGETABLES</span></h2>
                     <p class="vegetables-title-text">Our organic vegetables are hand-picked from local farms and delivered straight to your doorstep, ensuring that you get the freshest and most nutritious produce possible.</p>
@@ -202,7 +202,7 @@
             <!--Bu kısma sebzelerin resimlerini olduğu yer gelicek.-->
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="reviews-container">
                 <div class="reviews-title">
                     <h2 class="reviews-title-one">reviews from our <span class="reviews-title-two">customers</span></h2>
@@ -293,11 +293,11 @@
               <div class="logofoot">
 
                 </svg>
-                <svg width="20" height="20">
+                <svg width="20" height="20" style="cursor: pointer;">
                   <use href="./images/footicon.svg#logodot"></use>
                 </svg>
 
-                <svg width="186.67" height="16.67">
+                <svg width="186.67" height="16.67" style="cursor: pointer;">
                   <use href="./images/footicon.svg#logoword"></use>
                 </svg>
             
@@ -308,10 +308,10 @@
               </div>
 
               <div class="logo-mobile">
-                <svg width="16" height="16">
+                <svg width="16" height="16" style="cursor: pointer;">
                   <use href="./images/footicon.svg#logodotmobile"></use>
                 </svg>
-                <svg width="146" height="12">
+                <svg width="146" height="12" style="cursor: pointer;">
                   <use href="./images/footicon.svg#logowordmobile"></use>
                 </svg>
                 <p class="logo-title">
@@ -324,11 +324,11 @@
     
               <div class="footer-content">
                 <div class="footer-two-title">
-                  <h3>HOW IT WORKS</h3>
+                  <a class="footer-two-title-a" href="#howItWorks"><h3>HOW IT WORKS</h3></a>
                   <br />
-                  <h3>VEGETABLES</h3>
+                  <a class="footer-two-title-a" href="#vegetables"><h3>VEGETABLES</h3></a>
                   <br />
-                  <h3>REVIEWS</h3>
+                  <a class="footer-two-title-a" href="#reviews"><h3>REVIEWS</h3></a>
                 </div>
       
                 <div class="phone-address">
