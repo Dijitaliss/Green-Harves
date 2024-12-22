@@ -304,3 +304,171 @@ header {
  
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############################ ÇALIŞAN SİSTEM */
+    /* styles.css */
+  body___ {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      height: 100vh;
+      overflow: hidden; /* Menü açıkken kaydırmayı engelle */
+  }
+  
+  .navbar15 {
+      background-color: #597239; /* Navbar yeşil */
+      color: white;
+      
+      _padding: 15px 20px;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  
+  .hamburger-menu15 {
+      font-size: 24px;
+      cursor: pointer;
+  }
+  
+  .menu-toggle15 {
+      display: none; /* Checkbox görünmez */
+  }
+  
+  /* Menü container */
+  .menu-container15 {
+      position: fixed;
+      top: 0;
+      right: -100%; /* Menü başlangıçta görünmez */
+      min-width: 320px;
+      max-width: 360px;
+      height: 100vh;
+      background-color: #597239;
+      transition: right 0.3s ease; /* Açılma animasyonu */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      z-index: 20;
+  }
+  
+  /* Checkbox işaretlendiğinde menü açılır */
+  .menu-toggle15:checked ~ .menu-container15 {
+      right: 0; /* Menü görünür */
+  }
+  
+  .close-btn15 {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      align-self: flex-end;
+      margin-top: 10px;
+  }
+  
+  .menu-buttons15 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 50px;
+  }
+  
+  .menu-item15 {
+    text-decoration: none; 
+
+      width: 100%;
+      padding: 10px 25px;
+      font-size: 16px;
+      color: #333;
+      background-color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  
+  .menu-item15.active {
+      background-color: #e9d4d6; /* Aktif buton rengi */
+  }
+  
+  .menu-item15:hover {
+      background-color: #ccc;
+  }
+  .menu-item15 a {
+    text-decoration: none;
+    color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: -2%;
+    align-items: center;
+    border: 1px solid #fbfbfb66;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  
+  .shop-now-btn15 {
+      width: 90%;
+      padding: 15px 0;
+      font-size: 18px;
+      color: white;
+      background-color: #791c32; /* Buton rengi */
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  
+  .shop-now-btn15:hover {
+      background-color: #a5274c;
+  }
+  
+
+
+  @media screen and (min-width: 1280px) {
+    .navbar15 { display: none; }
+  }
+
+
+/* Eklenti extra */
+.d-none{ display:none; }
+
+/*
+  @media screen and (max-width: 768px) {                      }
+  @media screen and (min-width: 769px) {   .navbar15 { display: none; }           }
+*/
+
+
+/* ############################ BİTTİ          */
+
+
+
+
+
+
+
+
+
+
