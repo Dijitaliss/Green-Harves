@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+.footer-two-title-a {
+    color: white;
+    text-decoration:none ;
+}
+
 .footer-top {
     display: flex;
     flex-direction: row;
