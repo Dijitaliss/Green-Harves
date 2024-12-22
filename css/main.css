@@ -1029,7 +1029,7 @@ img.responsive-image {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 32px;
+    font-size: 18px;
     line-height: 32px;
     gap: 12px;
   }
